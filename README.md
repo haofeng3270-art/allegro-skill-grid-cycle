@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-Cadence Allegro PCB Editor 的 SKILL 脚本：按 **G** 循环切换栅格 **1 → 5 → 10 → 20 → 1 mil**。首次按 G 设置为 1 mil。
+Cadence Allegro PCB Editor 的 SKILL 脚本：按 **g 或 G** 循环切换栅格 **1 → 5 → 10 → 20 → 1 mil**。首次按 g 或 G 设置为 1 mil。
 
 ## 安装和使用
 
@@ -13,7 +13,7 @@ Cadence Allegro PCB Editor 的 SKILL 脚本：按 **G** 循环切换栅格 **1 �
    skill load("C:/allegro-skill/grid_cycle.il")
    ```
 
-3. 将焦点放在画布，按 G 切换。命令行会显示设置结果。
+3. 将焦点放在画布，按 g 或 G 切换。命令行会显示设置结果。
 
 如需启动时自动加载，在用户 `pcbenv/allegro.ilinit` 中追加（保留原有内容）：
 
@@ -21,7 +21,7 @@ Cadence Allegro PCB Editor 的 SKILL 脚本：按 **G** 循环切换栅格 **1 �
 load("C:/allegro-skill/grid_cycle.il")
 ```
 
-重新启动 Allegro。脚本加载时会覆盖当前会话中的 G 快捷键；删除自动加载行并重启即可停用。请检查自己的 `pcbenv/env` 中是否有原有的 G 键绑定。
+重新启动 Allegro。脚本加载时会覆盖当前会话中的 g、G 和 Shift+G 快捷键；删除自动加载行并重启即可停用。请检查自己的 `pcbenv/env` 中是否有原有的 相关按键绑定。
 
 ## 行为和限制
 
