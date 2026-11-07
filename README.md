@@ -1,5 +1,7 @@
 # Allegro Grid Cycle
 
+[English](README.en.md)
+
 Cadence Allegro PCB Editor 的 SKILL 脚本：按 **G** 循环切换栅格 **1 → 5 → 10 → 20 → 1 mil**。首次按 G 设置为 1 mil。
 
 ## 安装和使用
