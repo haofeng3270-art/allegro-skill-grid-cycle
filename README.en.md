@@ -2,7 +2,7 @@
 
 [中文说明](README.md)
 
-A Cadence Allegro PCB Editor SKILL script that cycles grid spacing through **1 → 5 → 10 → 20 → 1 mil** when you press **G**. The first press sets the grid to 1 mil.
+A Cadence Allegro PCB Editor SKILL script that cycles grid spacing through **1 → 5 → 10 → 20 → 1 mil** when you press **g or G**. The first press sets the grid to 1 mil.
 
 ## Installation and usage
 
@@ -13,7 +13,7 @@ A Cadence Allegro PCB Editor SKILL script that cycles grid spacing through **1 �
    skill load("C:/allegro-skill/grid_cycle.il")
    ```
 
-3. Focus the canvas and press G to cycle the grid. The command line displays the result.
+3. Focus the canvas and press g or G to cycle the grid. The command line displays the result.
 
 To load the script automatically at startup, append the following line to your user `pcbenv/allegro.ilinit`, preserving any existing contents:
 
@@ -21,7 +21,7 @@ To load the script automatically at startup, append the following line to your u
 load("C:/allegro-skill/grid_cycle.il")
 ```
 
-Restart Allegro. Loading the script overrides the existing G shortcut for the current session. To disable automatic loading, remove the line and restart. Check `pcbenv/env` for any previous G binding.
+Restart Allegro. Loading the script overrides the existing g, G and Shift+G shortcuts for the current session. To disable automatic loading, remove the line and restart. Check `pcbenv/env` for any previous bindings for these keys.
 
 ## Behavior and limitations
 
