@@ -1,5 +1,5 @@
 ; Cycle all Allegro grids through 1, 5, 10 and 20 mil.
-; Loading this file assigns G for the current Allegro session.
+; Loading this file assigns g, G and Shift+G for the current session.
 lfGridIndex = 0
 
 procedure(lfCycleGrid()
@@ -41,5 +41,7 @@ procedure(lfCycleGrid()
 
 axlCmdRegister("lf_grid_cycle" 'lfCycleGrid ?cmdType "general")
 axlSetFunckey("g" "lf_grid_cycle")
-printf("Grid cycle loaded: press G for 1 / 5 / 10 / 20 mil.\n")
+axlSetFunckey("G" "lf_grid_cycle")
+axlSetFunckey("Sg" "lf_grid_cycle")
+printf("Grid cycle loaded: press g or G for 1 / 5 / 10 / 20 mil.\n")
 
